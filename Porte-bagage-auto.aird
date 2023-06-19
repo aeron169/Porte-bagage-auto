@@ -11,11 +11,11 @@
     </ownedViews>
     <ownedViews xmi:type="viewpoint:DView" uid="_CB6bUArGEe6rrZad3V6CWg">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_GjV_IArGEe6rrZad3V6CWg" name="[OEBD] Operational Entities" repPath="#_Gi_Z0ArGEe6rrZad3V6CWg" changeId="1687175644907">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_GjV_IArGEe6rrZad3V6CWg" name="[OEBD] Operational Entities" repPath="#_Gi_Z0ArGEe6rrZad3V6CWg" changeId="1687176437930">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Entity%20Breakdown']"/>
         <target xmi:type="org.polarsys.capella.core.data.oa:EntityPkg" href="Porte-bagage-auto.capella#e614e011-78e5-42f1-8c76-3e62eb20e8c6"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_F6wDMArIEe6rrZad3V6CWg" name="[OCB] Operational Capabilities" repPath="#_F6uOAArIEe6rrZad3V6CWg" changeId="1687175665541">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_F6wDMArIEe6rrZad3V6CWg" name="[OCB] Operational Capabilities" repPath="#_F6uOAArIEe6rrZad3V6CWg" changeId="1687176437918">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Capabilities%20Blank']"/>
         <target xmi:type="org.polarsys.capella.core.data.oa:OperationalCapabilityPkg" href="Porte-bagage-auto.capella#f20af1ca-82d1-4ce3-8532-b2980f94721f"/>
       </ownedRepresentationDescriptors>
@@ -138,7 +138,7 @@
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_-du0gg6XEe6o3OCBDgUIYg"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_-dp8AQ6XEe6o3OCBDgUIYg" fontName="Segoe UI" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-dp8Ag6XEe6o3OCBDgUIYg" x="160" y="54"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-dp8Ag6XEe6o3OCBDgUIYg" x="160" y="84"/>
             </children>
             <styles xmi:type="notation:SortingStyle" xmi:id="_nbmKZQrNEe6rrZad3V6CWg"/>
             <styles xmi:type="notation:FilteringStyle" xmi:id="_nbmKZgrNEe6rrZad3V6CWg"/>
@@ -219,17 +219,17 @@
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_-dwpsA6XEe6o3OCBDgUIYg" type="4001" element="_EIgaxArOEe6rrZad3V6CWg" source="_vA_1gArNEe6rrZad3V6CWg" target="_-dp8AA6XEe6o3OCBDgUIYg">
           <children xmi:type="notation:Node" xmi:id="_-dx30A6XEe6o3OCBDgUIYg" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-dx30Q6XEe6o3OCBDgUIYg" x="-2" y="-9"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-dx30Q6XEe6o3OCBDgUIYg" x="-3" y="-9"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_-dx30g6XEe6o3OCBDgUIYg" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-dx30w6XEe6o3OCBDgUIYg" x="-1" y="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-dx30w6XEe6o3OCBDgUIYg" x="3" y="9"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_-dye4A6XEe6o3OCBDgUIYg" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-dye4Q6XEe6o3OCBDgUIYg" x="-1" y="9"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-dye4Q6XEe6o3OCBDgUIYg" x="3" y="9"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_-dwpsQ6XEe6o3OCBDgUIYg" jumpLinkStatus="Above" jumpLinkType="Tunnel"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_-dwpsg6XEe6o3OCBDgUIYg" fontName="Segoe UI" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-dwpsw6XEe6o3OCBDgUIYg" points="[106, 41, -568, -223]$[600, 235, -74, -29]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-dwpsw6XEe6o3OCBDgUIYg" points="[45, 41, -629, -253]$[565, 220, -109, -74]$[623, 260, -51, -34]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_-d1iMA6XEe6o3OCBDgUIYg" id="(0.5,0.5)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_-d1iMQ6XEe6o3OCBDgUIYg" id="(0.5,0.5)"/>
         </edges>
