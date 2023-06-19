@@ -43,7 +43,60 @@
       <ownedFunctionPkg xsi:type="org.polarsys.capella.core.data.oa:OperationalActivityPkg"
           id="39b96870-ce8f-44da-a933-f88dabdfe013" name="Operational Activities">
         <ownedOperationalActivities xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
-            id="91f362c0-7384-4ac2-865b-9654c8e71952" name="Root Operational Activity"/>
+            id="91f362c0-7384-4ac2-865b-9654c8e71952" name="Root Operational Activity">
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="2d1d8e4f-32de-4f4f-9adf-ef9b2dc99d47" name="Confier baggages aux agents"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="1adb0572-9bcf-46e7-9571-0eb5ce80e7b0" name="Prend en charge le baggage"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="28cf8f2d-5cab-4ad9-8d96-594f694cd104" name="Déterminer dans quel wagon ajouter le baggage"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="acee9e42-8fe3-45b0-8032-6779e6c039e5" name="Charger le wagon"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="c98f0055-207e-4fb7-8bf1-3204538f4163" name="Conduire les baggages"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="d35f28f0-cc68-4222-99cd-2ec23c584f2b" name="Stationner le véhicule"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="47334ce9-f33b-4118-b3db-616b0c45a466" name="Décharger les wagons"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="78537809-5099-4ab0-a845-457aa63492a2" name="Charger l'avion"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="e81bbe42-1ad0-413f-a433-38679f7b2da1" name="Gérer absence de train"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="49d9f46e-a9ff-4cd0-94f3-b7e5471e71fb" name="Remplacer un train sur une destination"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="943ca1dd-0a70-4015-b0a7-71f2adbb3f2b" name="Alerter si retard"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="27b265bb-b8e1-4e62-8aae-77c7a7ebec0d" name="Information sur la destination"
+              target="#28cf8f2d-5cab-4ad9-8d96-594f694cd104" source="#1adb0572-9bcf-46e7-9571-0eb5ce80e7b0"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="159d4187-c79d-45b8-9874-b2d887c20a8a" name="Baggage en cours de transit"
+              target="#acee9e42-8fe3-45b0-8032-6779e6c039e5" source="#28cf8f2d-5cab-4ad9-8d96-594f694cd104"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="4653635d-7767-4f33-8353-6c0186f55e47" name="Baggages en cours de transit"
+              target="#1adb0572-9bcf-46e7-9571-0eb5ce80e7b0" source="#2d1d8e4f-32de-4f4f-9adf-ef9b2dc99d47"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="f77c7d62-9560-4a9d-b8f4-9438ecda2df5" name="Wagon chargé" target="#c98f0055-207e-4fb7-8bf1-3204538f4163"
+              source="#acee9e42-8fe3-45b0-8032-6779e6c039e5"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="f6d55a3e-c10f-48bd-b493-17c74f72fc9b" name="Ralentir/Arreter" target="#d35f28f0-cc68-4222-99cd-2ec23c584f2b"
+              source="#c98f0055-207e-4fb7-8bf1-3204538f4163"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="c8095e40-74a2-44ff-983e-337c9cf63a0f" name="Wagon stationné/ prêt à decharger"
+              target="#47334ce9-f33b-4118-b3db-616b0c45a466" source="#d35f28f0-cc68-4222-99cd-2ec23c584f2b"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="992b22d3-72dd-4b43-8e34-36b6c6922612" name="Transfert des baggages"
+              target="#78537809-5099-4ab0-a845-457aa63492a2" source="#47334ce9-f33b-4118-b3db-616b0c45a466"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="6b0bb7bb-90ef-4cd7-93cd-09ddce4da348" name="Absence de train" target="#e81bbe42-1ad0-413f-a433-38679f7b2da1"
+              source="#28cf8f2d-5cab-4ad9-8d96-594f694cd104"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="594456d5-a83e-4ee9-b8af-eb93040f6f96" name="Demande de remplacement"
+              target="#49d9f46e-a9ff-4cd0-94f3-b7e5471e71fb" source="#e81bbe42-1ad0-413f-a433-38679f7b2da1"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="f2acc061-f7b1-46c4-a5c0-d62f0868ae58" name="Interaction 10" target="#943ca1dd-0a70-4015-b0a7-71f2adbb3f2b"
+              source="#e81bbe42-1ad0-413f-a433-38679f7b2da1"/>
+        </ownedOperationalActivities>
       </ownedFunctionPkg>
       <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.oa:OperationalCapabilityPkg"
           id="f20af1ca-82d1-4ce3-8532-b2980f94721f" name="Operational Capabilities">
@@ -109,6 +162,8 @@
             id="4f28ac7b-1736-463d-aa11-47a8f09479da" name="Avoir accès au wagon de chargement">
           <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
               id="d96516a6-8fed-424b-aff5-8c243e1de464" involved="#b25b1028-856c-46cc-a869-e8b93f02170c"/>
+          <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
+              id="8cc0af68-78b2-45f1-9d9d-9686fd8ae6ed" involved="#a66a293c-fac7-4814-8a11-aa88fd9ca90c"/>
         </ownedOperationalCapabilities>
         <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
             id="29be7804-8323-41b0-b532-dc8719c41328" name="Accès aux données véhicules">
@@ -143,6 +198,8 @@
               id="1933c678-b8fc-4605-b0e2-32f92f89568f" involved="#3465bfdb-c4d7-4f9e-be57-2431c9278da9"/>
           <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
               id="d0b3a293-c0a7-4bf2-a976-995f8905ac10" involved="#b25b1028-856c-46cc-a869-e8b93f02170c"/>
+          <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
+              id="4048d359-5997-4646-a148-2eace255e7c3" involved="#a66a293c-fac7-4814-8a11-aa88fd9ca90c"/>
         </ownedOperationalCapabilities>
       </ownedAbstractCapabilityPkg>
       <ownedInterfacePkg xsi:type="org.polarsys.capella.core.data.cs:InterfacePkg"
@@ -170,24 +227,66 @@
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="52df31fc-de78-4b26-a71b-12acdbbf48b1"
               name="Zone Maintenance" abstractType="#15e9ec10-6daa-4170-a6cb-07a02f175201"/>
           <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="2e72f905-368a-4971-aa8c-01d5aa02ea2a"
-              name="Passager" actor="true" human="true"/>
+              name="Passager" actor="true" human="true">
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="e6a3bdce-8735-4f98-8edd-fccad96f495d" targetElement="#2d1d8e4f-32de-4f4f-9adf-ef9b2dc99d47"
+                sourceElement="#2e72f905-368a-4971-aa8c-01d5aa02ea2a"/>
+          </ownedEntities>
           <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="cd391709-93b1-4afc-a48e-2dc8b0281d79"
               name="Zone de chargement">
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="6e12c209-e1bf-4dfe-b407-1d81bbb029a3"
                 name="Responsable équipe chargement" abstractType="#1b54e0c0-6af7-45ac-ae33-9ca2c7ca0281"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="b9fd260b-9688-4de2-8393-77832e2715a0"
                 name="Agent de chargement" abstractType="#b25b1028-856c-46cc-a869-e8b93f02170c"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="5742e4b6-d248-40c7-902c-1bfd49600b15"
+                name="Agent de déchargement" abstractType="#a66a293c-fac7-4814-8a11-aa88fd9ca90c"/>
             <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="1b54e0c0-6af7-45ac-ae33-9ca2c7ca0281"
-                name="Responsable équipe chargement" actor="true" human="true"/>
+                name="Responsable équipe chargement" actor="true" human="true">
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="6c8bea52-41a1-4d63-ba7b-d23a9865eaf6" targetElement="#e81bbe42-1ad0-413f-a433-38679f7b2da1"
+                  sourceElement="#1b54e0c0-6af7-45ac-ae33-9ca2c7ca0281"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="172bcb5e-308b-4218-a217-1debea3817e3" targetElement="#943ca1dd-0a70-4015-b0a7-71f2adbb3f2b"
+                  sourceElement="#1b54e0c0-6af7-45ac-ae33-9ca2c7ca0281"/>
+            </ownedEntities>
             <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="b25b1028-856c-46cc-a869-e8b93f02170c"
-                name="Agent de chargement" actor="true" human="true"/>
+                name="Agent de chargement" actor="true" human="true">
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="a540cffd-fe5b-480b-825e-22526ac65ae3" targetElement="#1adb0572-9bcf-46e7-9571-0eb5ce80e7b0"
+                  sourceElement="#b25b1028-856c-46cc-a869-e8b93f02170c"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="657c5633-8d2a-485e-8028-7434ce7fda7f" targetElement="#28cf8f2d-5cab-4ad9-8d96-594f694cd104"
+                  sourceElement="#b25b1028-856c-46cc-a869-e8b93f02170c"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="3bd8f2f6-34cc-4292-9fd5-387d4cd71137" targetElement="#acee9e42-8fe3-45b0-8032-6779e6c039e5"
+                  sourceElement="#b25b1028-856c-46cc-a869-e8b93f02170c"/>
+            </ownedEntities>
+            <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="a66a293c-fac7-4814-8a11-aa88fd9ca90c"
+                name="Agent de déchargement" actor="true" human="true">
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="bc664d11-e9d9-4de6-a52f-a106b03dc3f1" targetElement="#47334ce9-f33b-4118-b3db-616b0c45a466"
+                  sourceElement="#a66a293c-fac7-4814-8a11-aa88fd9ca90c"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="9f73029a-54d2-410a-8dc3-b62a41b637d9" targetElement="#78537809-5099-4ab0-a845-457aa63492a2"
+                  sourceElement="#a66a293c-fac7-4814-8a11-aa88fd9ca90c"/>
+            </ownedEntities>
           </ownedEntities>
           <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="79b1504d-85af-4f2d-9ec4-d15197b9e136"
               name="Zone de circulation">
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="5636e7df-9499-4cfd-97c1-7b417bdd0bbd"
                 name="Conducteur" abstractType="#3465bfdb-c4d7-4f9e-be57-2431c9278da9"/>
             <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="3465bfdb-c4d7-4f9e-be57-2431c9278da9"
-                name="Conducteur" actor="true" human="true"/>
+                name="Conducteur" actor="true" human="true">
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="59fd1a59-25cd-4d44-afa1-978341ea1f53" targetElement="#c98f0055-207e-4fb7-8bf1-3204538f4163"
+                  sourceElement="#3465bfdb-c4d7-4f9e-be57-2431c9278da9"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="b364d7ee-457c-4e11-b196-266570f66dfc" targetElement="#d35f28f0-cc68-4222-99cd-2ec23c584f2b"
+                  sourceElement="#3465bfdb-c4d7-4f9e-be57-2431c9278da9"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="b2cbfb3a-7500-4f9c-b908-9e8231357cab" targetElement="#49d9f46e-a9ff-4cd0-94f3-b7e5471e71fb"
+                  sourceElement="#3465bfdb-c4d7-4f9e-be57-2431c9278da9"/>
+            </ownedEntities>
           </ownedEntities>
           <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="d8d2c458-f111-4281-a1f8-d9a195a15259"
               name="Zone de contrôle">
