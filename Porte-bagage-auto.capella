@@ -79,8 +79,12 @@
             name="Aeroport">
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="b9fd260b-9688-4de2-8393-77832e2715a0"
               name="Agent de chargement" abstractType="#b25b1028-856c-46cc-a869-e8b93f02170c"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="6e12c209-e1bf-4dfe-b407-1d81bbb029a3"
+              name="Responsable équipe chargement" abstractType="#1b54e0c0-6af7-45ac-ae33-9ca2c7ca0281"/>
           <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="b25b1028-856c-46cc-a869-e8b93f02170c"
               name="Agent de chargement" actor="true" human="true"/>
+          <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="1b54e0c0-6af7-45ac-ae33-9ca2c7ca0281"
+              name="Responsable équipe chargement" actor="true" human="true"/>
         </ownedEntities>
       </ownedEntityPkg>
     </ownedArchitectures>
