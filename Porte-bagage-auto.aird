@@ -11,11 +11,11 @@
     </ownedViews>
     <ownedViews xmi:type="viewpoint:DView" uid="_CB6bUArGEe6rrZad3V6CWg">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_GjV_IArGEe6rrZad3V6CWg" name="[OEBD] Operational Entities" repPath="#_Gi_Z0ArGEe6rrZad3V6CWg" changeId="1687176437930">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_GjV_IArGEe6rrZad3V6CWg" name="[OEBD] Operational Entities" repPath="#_Gi_Z0ArGEe6rrZad3V6CWg" changeId="1687176713465">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Entity%20Breakdown']"/>
         <target xmi:type="org.polarsys.capella.core.data.oa:EntityPkg" href="Porte-bagage-auto.capella#e614e011-78e5-42f1-8c76-3e62eb20e8c6"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_F6wDMArIEe6rrZad3V6CWg" name="[OCB] Operational Capabilities" repPath="#_F6uOAArIEe6rrZad3V6CWg" changeId="1687176437918">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_F6wDMArIEe6rrZad3V6CWg" name="[OCB] Operational Capabilities" repPath="#_F6uOAArIEe6rrZad3V6CWg" changeId="1687176713465">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Capabilities%20Blank']"/>
         <target xmi:type="org.polarsys.capella.core.data.oa:OperationalCapabilityPkg" href="Porte-bagage-auto.capella#f20af1ca-82d1-4ce3-8532-b2980f94721f"/>
       </ownedRepresentationDescriptors>
@@ -91,7 +91,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Entity%20Breakdown']/@defaultLayer/@nodeMappings[name='OEB_OperationalEntities']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_kbLtYArNEe6rrZad3V6CWg" name="Employé" outgoingEdges="_-de84A6XEe6o3OCBDgUIYg" width="7" height="7" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_kbLtYArNEe6rrZad3V6CWg" name="Agent de chargement" outgoingEdges="_-de84A6XEe6o3OCBDgUIYg" width="7" height="7" resizeKind="NSEW">
       <target xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Porte-bagage-auto.capella#b25b1028-856c-46cc-a869-e8b93f02170c"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Porte-bagage-auto.capella#b25b1028-856c-46cc-a869-e8b93f02170c"/>
       <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_kbLtYQrNEe6rrZad3V6CWg" showIcon="false" workspacePath="/org.polarsys.capella.core.sirius.analysis/description/images/Actor.svg">
@@ -294,7 +294,7 @@
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Capabilities%20Blank']/@defaultLayer/@containerMappings[name='COC_OperationalEntities']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Capabilities%20Blank']/@defaultLayer/@containerMappings[name='COC_OperationalEntities']"/>
-      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_kbIqEArNEe6rrZad3V6CWg" name="Employé" incomingEdges="_EIgaxArOEe6rrZad3V6CWg">
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_kbIqEArNEe6rrZad3V6CWg" name="Agent de chargement" incomingEdges="_EIgaxArOEe6rrZad3V6CWg">
         <target xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Porte-bagage-auto.capella#b25b1028-856c-46cc-a869-e8b93f02170c"/>
         <semanticElements xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Porte-bagage-auto.capella#b25b1028-856c-46cc-a869-e8b93f02170c"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>

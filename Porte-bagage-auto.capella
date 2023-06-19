@@ -78,9 +78,9 @@
         <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="cead9e26-06d5-48fa-953c-27883bfe0361"
             name="Aeroport">
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="b9fd260b-9688-4de2-8393-77832e2715a0"
-              name="Employé" abstractType="#b25b1028-856c-46cc-a869-e8b93f02170c"/>
+              name="Agent de chargement" abstractType="#b25b1028-856c-46cc-a869-e8b93f02170c"/>
           <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="b25b1028-856c-46cc-a869-e8b93f02170c"
-              name="Employé" actor="true" human="true"/>
+              name="Agent de chargement" actor="true" human="true"/>
         </ownedEntities>
       </ownedEntityPkg>
     </ownedArchitectures>
